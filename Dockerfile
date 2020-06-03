@@ -29,4 +29,4 @@ EXPOSE 8000
 RUN chmod +x /usr/src/asu/docker-entrypoint.sh
 ENTRYPOINT ["/usr/src/asu/docker-entrypoint.sh"]
 
-CMD ["--config", "config.js", "--ui"]
+CMD
