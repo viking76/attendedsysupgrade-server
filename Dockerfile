@@ -19,6 +19,7 @@ COPY odbc.ini ~/.odbc.ini
 WORKDIR /asu
 
 RUN pip3 install -e .
+RUN pip3 install -r requirements.txt
 RUN pip3 install asu
 RUN export FLASK_APP=asu  # set Flask app to asu
 RUN flask janitor update  # download upstream profiles/packages
