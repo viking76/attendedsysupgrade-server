@@ -13,7 +13,7 @@ wget
 RUN apt install -y \
 subversion g++ zlib1g-dev build-essential git python rsync man-db \
 libncurses5-dev gawk gettext unzip file libssl-dev wget zip tar redis-server
-
+RUN rm -rf /var/lib/apt/lists/*
 COPY . /asu
 COPY odbc.ini ~/.odbc.ini
 WORKDIR /asu
